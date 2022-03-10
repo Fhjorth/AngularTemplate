@@ -1,3 +1,7 @@
+<app-nav-bar class="nav-bar" (drawerToggleEmitter)="toggleDrawer($event)"></app-nav-bar>
+<main class="container main-section navbar-padding">
+  <span class="dummy-text">{{getDummyText()}}</span>
+</main>
 <div class="row">
   <div class="col-sm-12">
     <app-data-list (calCount)="calCount($event)" [data]="data1" [showCount]="true"></app-data-list>
